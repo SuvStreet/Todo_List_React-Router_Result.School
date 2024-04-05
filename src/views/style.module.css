@@ -1,0 +1,67 @@
+.change {
+	display: flex;
+	place-content: center;
+	place-items: center;
+	gap: 5px;
+	border-bottom: 1px solid #727272;
+	padding: 10px 0;
+}
+
+.section_button {
+	display: flex;
+	justify-content: space-between;
+}
+
+.taskList {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	gap: 15px;
+	margin: 10px 0;
+	font-size: 1.5rem;
+}
+
+.task {
+	display: flex;
+}
+
+.text {
+	width: 100%;
+	text-align: start;
+	padding: 10px;
+	border-bottom: 1px solid #727272;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.text:hover {
+	border-bottom: 1px solid transparent;
+	box-shadow: #727272 0 0 10px;
+}
+
+.emptyTodoList {
+	font-weight: 700;
+	margin-bottom: 25px;
+}
+
+.taskPage {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: calc(100dvh - 80px);
+}
+
+.taskText {
+	max-height: 80%;
+	overflow-y: auto;
+}
+
+@media (hover: none) {
+	.change {
+		gap: 10px;
+	}
+
+	.section_button {
+		gap: 10px;
+	}
+}
