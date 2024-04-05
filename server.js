@@ -1,6 +1,7 @@
-const jsonServer = require('json-server')
+import jsonServer from 'json-server'
+
 const server = jsonServer.create()
-const router = jsonServer.router('db/db.json')
+const router = jsonServer.router('db.json')
 
 const middlewares = jsonServer.defaults()
 
@@ -11,5 +12,3 @@ server.use(router)
 server.listen(5000, () => {
   console.log('JSON Server is running')
 })
-
-module.exports = server;
